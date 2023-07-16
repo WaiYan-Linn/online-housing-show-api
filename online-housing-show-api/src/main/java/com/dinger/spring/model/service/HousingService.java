@@ -90,7 +90,7 @@ public class HousingService {
 	        list.add((root, query, cb) -> cb.like(cb.lower(root.get("housingName")), "%" + housingName.toLowerCase() + "%"));
 	    }
 	    
-	    if (StringUtils.hasLength(housingName)) {
+	    if (StringUtils.hasLength(address)) {
 	        list.add((root, query, cb) -> cb.like(cb.lower(root.get("address")), "%" + address.toLowerCase() + "%"));
 	    }
 
